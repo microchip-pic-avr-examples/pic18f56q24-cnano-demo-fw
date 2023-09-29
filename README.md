@@ -65,6 +65,26 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
   - Enable Transmit: Enabled
   <br><img src="images/Q24-UART2PLIB.png" width="400">
 
+**ADCC**
+-Mode: Low Pass Filter
+-Positive Reference: FVR
+-Clock Source: ADCRC
+
+<br><img src="images/Q24-ADCC.png" width="400">
+
+-Repeat Value: 10
+-Accumulator Right Shift: 4
+
+<br><img src="images/Q24-ADCC-COMP.png" width="400">
+
+**FVR**
+-FVR: Enabled
+-Temp Sensor: Enabled
+-Temp Sensor Range: High
+-ADC FVR: 2X
+
+<br><img src="images/Q24-FVRREG.png" width="400">
+
 - **Pin Grid View:**
   - UART2 RX2 input: RB4
   - UART2 TX2 output: RB5
@@ -79,19 +99,19 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
   - RB5:
     - Module: UART2
     - Function: TX2
-  - RA0:
+  - RF3:
     - Function: GPIO
     - Direction: input
     - Custom Name: Button
     - Weak Pullup: Enabled
-  - RC7:
+  - RF2:
     - Function: GPIO
     - Direction: output
     - Custom Name: LED
   <br><img src="images/Q24-PINMANAGER.png" width="1000">
 
 **Note:**
-  - Pin RA0 (Button) has weak pull-up enabled
+  - Pin RF3 (Button) has weak pull-up enabled
   - UART2 is routed to CDC pins for more flexibility (TX = RB5, RX = RB4)
 
 
@@ -99,10 +119,10 @@ The following pin configuration must be made for this project:
 
 |   Pin    | Configuration  | Function    |
 | :------: | :------------: | :---------: |
-|   RB4    | Digital output | UART2 TX    |
-|   RB5    | Digital input  | UART2 RX    |
-|   RC7    | Digital output | LED         |
-|   RA0    | Digital input  | Button      |
+|   RB5    | Digital output | UART2 TX    |
+|   RB4    | Digital input  | UART2 RX    |
+|   RF2    | Digital output | LED         |
+|   RF3    | Digital input  | Button      |
 
 ## 2. Demo
 
