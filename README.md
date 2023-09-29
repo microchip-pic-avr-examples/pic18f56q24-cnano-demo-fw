@@ -38,6 +38,8 @@ To program the Curiosity Nano board with this MPLAB® X project, follow the step
 
 The following peripheral and clock configurations are set up using MPLAB® Code Configurator (MCC) Melody for the PIC18F56Q24:
 
+  <br><img src="images/Q24-BUILDER.png" width="400">
+
 - **Clock Control:**
   - Clock Source: HFINTOSC
   - HF Internal Clock: 64_MHz
