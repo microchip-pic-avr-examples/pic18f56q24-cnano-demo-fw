@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f56q24-cnano-demo-fw",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "PIC18F56Q24 cnano firmware demo",
         "projectName": "pic18f56q24-cnano-demo-fw",
         "shortDescription": "This example demonstrates some of the PIC18-Q24 features such as the NVM module, the UART module, the ADCC and the integrated Temperature Indicator module. This firmware is pre-loaded onto the Q24 Curiosity Nano development boards.",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "^1.23.417"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.3.7"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,9 +36,9 @@
                 "versionRange": "*"
             }
         },
-        "author": "Prasad Aradhya",
-        "peripherals": [],
-        "keywords": [],
+        "author": "Dylan Turner",
+        "peripherals": ["ADCC","UART","GPIO"],
+        "keywords": ["User Interface","Curiosity"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
