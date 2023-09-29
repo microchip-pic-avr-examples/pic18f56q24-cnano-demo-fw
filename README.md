@@ -7,7 +7,7 @@ This project comes preloaded on the PIC18F56Q24 Curiosity Nano board when the us
 - The first program is a simple LED blinking program. The microcontroller starts with this program being activated
 - The second program turns on the existing on-board LED by pressing a button on the Curiosity Nano board
 - The third program sends an 8-bit counter through UART when the on-board button is pressed. This increases the counter.
-- The fourth program takes a temperature measurement using the ADC, NVM, and FVR modules. 
+- The fourth program takes a temperature measurement using the ADC, NVM, and FVR modules.
 
 The main program is changed by sending one of the numbers 1, 2, 3 or 4, through UART interface. Any other key will return the menu.
 
@@ -46,7 +46,7 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
 
 - **Configuration Bits:**
   - CONFIG1 & CONFIG5:
-    - Disable external oscillator, and change the reset oscillator to 64M 
+    - Disable external oscillator, and change the reset oscillator to 64M
     - WDT operating mode: WDT Disabled; SWDTEN is ignored
   <br><img src="images/Q24-CONFIGBITS.png" width="400">
 
@@ -90,7 +90,7 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
     - Custom Name: LED
   <br><img src="images/Q24-PINMANAGER.png" width="1000">
 
-**Note:** 
+**Note:**
   - Pin RA0 (Button) has weak pull-up enabled
   - UART2 is routed to CDC pins for more flexibility (TX = RB5, RX = RB4)
 
@@ -131,7 +131,7 @@ Follow the steps in the **How to use MPLAB® Data Visualizer** section to set up
 ### 2.4 Temperature Sensor Reading
 
 The fourth program takes an internal temperature measurement when the on-board button is pressed.
-To run the fourth project, send the command '4' through UART using the Data Visualizer. After sending this command, the terminal will receive the following message: `"APPLICATION TEMP sensor"`.
+To run the fourth project, send the command `4` through UART using the Data Visualizer. After sending this command, the terminal will receive the following message: `"APPLICATION TEMP sensor"`.
 
 <br><img src="images/Q24-TEMPSENSOR.png" width="800">
 
@@ -197,7 +197,7 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 
 ##  How to Program the Curiosity Nano board
 
-This chapter shows how to use the MPLAB X IDE to program an PIC® device with an Example_Project.X. This can be applied for any other projects. 
+This chapter shows how to use the MPLAB X IDE to program an PIC® device with an Example_Project.X. This can be applied for any other projects.
 
 - Connect the board to the PC.
 
