@@ -66,22 +66,22 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
   <br><img src="images/Q24-UART2PLIB.png" width="400">
 
 **ADCC**
--Mode: Low Pass Filter
--Positive Reference: FVR
--Clock Source: ADCRC
+- Mode: Low Pass Filter
+- Positive Reference: FVR
+- Clock Source: ADCRC
 
 <br><img src="images/Q24-ADCC.png" width="400">
 
--Repeat Value: 10
--Accumulator Right Shift: 4
+- Repeat Value: 10
+- Accumulator Right Shift: 4
 
 <br><img src="images/Q24-ADCC-COMP.png" width="400">
 
 **FVR**
--FVR: Enabled
--Temp Sensor: Enabled
--Temp Sensor Range: High
--ADC FVR: 2X
+- FVR: Enabled
+- Temp Sensor: Enabled
+- Temp Sensor Range: High
+- ADC FVR: 2X
 
 <br><img src="images/Q24-FVRREG.png" width="400">
 
