@@ -108,10 +108,10 @@ static uint8_t Unblocking_Read(void) {
 
 static void Print_Menu(void) {
     __delay_us(200);
-    printf("\n\r");
-    printf("********************************************************************************************************\n\r");
-    printf("*                       Out of the box application for PIC18F56Q24 Curiosity Nano                      *\n\r");
-    printf("********************************************************************************************************\n\r");
+    printf("\r\n");
+    printf("********************************************************************************************************\r\n");
+    printf("*                       Out of the box application for PIC18F56Q24 Curiosity Nano                      *\r\n");
+    printf("********************************************************************************************************\r\n");
     printf("*        MMMMMMMMMNddhysyyyysyyhdmMMNNNMMMMM                                                           *\r\n");
     printf("*        MMMMMMmhssssssssssssssssshMNmmMMMMM                                                           *\r\n");
     printf("*        MMMMdyssssssssssssssssssssyNMMMMMMM                                                           *\r\n");
@@ -128,17 +128,17 @@ static void Print_Menu(void) {
     printf("*        MMMMhysssssssssssssssssssssso+mMMMM                                                           *\r\n");
     printf("*        MMMMMMNdysssssssssssssssssydNMMMMMM                                                           *\r\n");
     printf("*        MMMMMMMMMNmdhyyysssyyhhdmMMMMMMMMMM                                                           *\r\n");
-    printf("********************************************************************************************************\n\r");
-    printf("*                                                                                                      *\n\r");
-    printf("* -Press a key corresponding to a program:                                                             *\n\r");
-    printf("*  '1' - Default program; Blinking LED                                                                 *\n\r");
-    printf("*  '2' - LED turns on while button is pressed                                                          *\n\r");
-    printf("*  '3' - An ascending ramp visible in MPLAB Data Visualizer sent through UART while button is pressed  *\n\r");
-    printf("*  '4' - Temperature sensor measurement taken with every button press                                  *\n\r");
-    printf("*                                                                                                      *\n\r");
-    printf("* - Press any other key to view the menu again.                                                        *\n\r");
-    printf("*                                                                                                      *\n\r");
-    printf("********************************************************************************************************\n\r");
+    printf("********************************************************************************************************\r\n");
+    printf("*                                                                                                      *\r\n");
+    printf("* -Press a key corresponding to a program:                                                             *\r\n");
+    printf("*  '1' - Default program; Blinking LED                                                                 *\r\n");
+    printf("*  '2' - LED turns on while button is pressed                                                          *\r\n");
+    printf("*  '3' - An ascending ramp visible in MPLAB Data Visualizer sent through UART while button is pressed  *\r\n");
+    printf("*  '4' - Temperature sensor measurement taken with every button press                                  *\r\n");
+    printf("*                                                                                                      *\r\n");
+    printf("* - Press any other key to view the menu again.                                                        *\r\n");
+    printf("*                                                                                                      *\r\n");
+    printf("********************************************************************************************************\r\n");
 }
 
 static void CLI_Execute_Command(uint8_t command) {
