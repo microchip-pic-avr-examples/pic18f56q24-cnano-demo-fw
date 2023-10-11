@@ -49,13 +49,13 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
 
 - **Configuration Bits:**
   - CONFIG1 & CONFIG5:
-    - Disable external oscillator, and change the reset oscillator to 64M
+    - Disable external oscillator, and change the reset oscillator to 64_MHz
     - WDT operating mode: WDT Disabled; SWDTEN is ignored
   <br><img src="images/Q24-CONFIGBITS.png" width="400">
 
 - **UART2:**
   - UART PLIB Selector: UART2
-  - Requested Baudrate: 115200
+  - Requested Baudrate: 9600
   - Parity: None
   - Data Size: 8
   - Stop Bits: 1
