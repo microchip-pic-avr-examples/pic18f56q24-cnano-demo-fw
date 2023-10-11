@@ -29,6 +29,7 @@ For more details and code examples on the PIC18F56Q24 click on the following lin
 ## Hardware Used
 
 - PIC18F56Q24 Curiosity Nano Development Board is used as a test platform
+
   <br><img src="images/q24-board.png" width="1000">
 
 ## Operation
