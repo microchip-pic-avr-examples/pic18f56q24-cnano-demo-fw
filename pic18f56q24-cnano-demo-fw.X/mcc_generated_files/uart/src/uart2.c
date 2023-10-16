@@ -113,10 +113,10 @@ void UART2_Initialize(void)
     U2CON1 = 0x80; 
     //FLO off; TXPOL not inverted; STP Transmit 1Stop bit, receiver verifies first Stop bit; RXPOL not inverted; RUNOVF RX input shifter stops all activity; 
     U2CON2 = 0x0; 
-    //BRGL 130; 
-    U2BRGL = 0x82; 
-    //BRGH 6; 
-    U2BRGH = 0x6; 
+    //BRGL 138; 
+    U2BRGL = 0x8A; 
+    //BRGH 0; 
+    U2BRGH = 0x0; 
     //TXBE empty; STPMD in middle of first Stop bit; TXWRE No error; 
     U2FIFO = 0x2E; 
     //ABDIE disabled; ABDIF Auto-baud not enabled or not complete; WUIF WUE not enabled by software; 
