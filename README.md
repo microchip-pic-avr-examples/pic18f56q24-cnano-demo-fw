@@ -63,7 +63,7 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
   - Redirect Printf to UART: Enabled
   <br><img src="images/UART2.png" width="400">
 
-*Note* Notice the change in default baud rate, this change should be reflected in data visualizer.
+**Note:** Notice the change in default baud rate, this change should be reflected in data visualizer.
 
   <br><img src="images/BAUD RATE - Q24.png" width="400">
 
