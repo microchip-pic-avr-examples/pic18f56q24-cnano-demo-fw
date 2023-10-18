@@ -28,7 +28,7 @@ For more details and code examples on the PIC18F56Q24 click on the following lin
 
 ## Hardware Used
 
-- PIC18F56Q24 Curiosity Nano Development Board is used as a test platform
+- PIC18F56Q24 Curiosity Nano Development Board is used as a test platform.
 
   <br><img src="images/PIC18F56Q24-CNANO_Overview.png" width="1000">
 
@@ -174,7 +174,7 @@ This project is an out-of-the-box experience for the first-time user. It showcas
 
 This section illustrates how to use the MPLAB X Data Visualizer to send commands and receive information, but prior to programming the PIC18F56Q24 Curiosity Nano Board. This can be applied to any other projects.
 
-1. Open the software terminal in MPLAB X IDE. Left click on the **Data Visualizer** button.
+1. Open the software terminal in MPLAB® X IDE. Left click the **Data Visualizer** button.
 
 <br><img src="images/DV_BUTTON.png" width="1000">
 
@@ -186,17 +186,17 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 
 <br><img src="images/DV_SETTINGS.png" width="1000">
 
-3. Start using the programs. Press the **Start** button. Left click on the **Line input**, type any key, send commands.
+3. Start using the programs. Press the **Start** button. Left click on **Line input**, type any key, send commands.
 
 <br><img src="images/DV_DEMO.png" width="1000">
 
 **Note:** The next steps must be followed to run the third program.
 
-4. Prepare MPLAB Data Visualizer. Right click on the **Important files**, click **Add Item to Important Files...** .
+4. Prepare MPLAB Data Visualizer. Right click on **Important files**, click **Add Item to Important Files...** .
 
 <br><img src="images/IMPORTANTFILES.png" width="500">
 
-**Note:** Step 5 will be followed only if there is no existing setup file for Data Visualizer. Otherwise go to Step 6.
+**Note:** Follow step 5 if there is no existing setup file for Data Visualizer, otherwise go to Step 6.
 
 5. Prepare MPLAB Data Visualizer.
 
@@ -210,13 +210,13 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 
 <br><img src="images/RAMP SETTINGS.png" width="1000">
 
-6. Add the DVWS file to see the ramp using Data Visualizer. Click on the **\*.DVWS file** and **Select**.
+6. Add the DVWS file to see the ramp using Data Visualizer. Click the **\*.DVWS file** and **Select**.
 
 <br><img src="images/EXTERNAL.png" width="700">
 
 7. See the expected result on Data Visualizer.
 
-- Double click on the **\*.dvws file** from **Important Files**, or right click and select **Open with Data Visualizer**, or directly press **Load** button on the **MPLAB Data Visualizer** tab and select the file
+- Double click on the **\*.dvws file** from **Important Files**, or right click and select **Open with Data Visualizer**, or directly press **Load** button on the **MPLAB Data Visualizer** tab and select the file.
 - Select **Source** from Time Plot window
 - Click **Start Streaming COMx** the communication serial port in the **Variable Streamers** tab
 - Click **Scroll axis automatically**.
@@ -227,16 +227,16 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 
 This chapter shows how to use the MPLAB X IDE to program an PIC® device with an Example_Project.X. This can be applied for any other projects.
 
-- Connect the board to the PC
+- Connect the board to the PC.
 
-- Open the Example_Project.X project in MPLAB X IDE
+- Open the Example_Project.X project in MPLAB X IDE.
 
-- Set the Example_Project.X project as main project
+- Set the Example_Project.X project as main project.
 
   - Right click on the project in the **Projects** tab and click **Set as Main Project**
     <br><img src="images/SETAS.png" width="500">
 
-- Clean and build the Example_Project.X project
+- Clean and build the Example_Project.X project.
 
   - Right click on the **Example_Project.X** project and select **Clean and Build**
     <br><img src="images/CLEANANDBUILD.png" width="500">
@@ -248,7 +248,7 @@ This chapter shows how to use the MPLAB X IDE to program an PIC® device with an
   - Select the **PICxxxxx Curiosity Nano** (click on the **SN**), click **Apply** and then click **OK**:
     <br><img src="images/PROJECTPROP.png" width="500">
 
-- Program the project to the board
+- Program the project to the board.
   - Right click on the project and click **Make and Program Device**
     <br><img src="images/MAKEPROG.png" width="500">
 
