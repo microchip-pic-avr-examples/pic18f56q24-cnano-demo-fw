@@ -56,7 +56,7 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
 
 - **UART2:**
   - UART PLIB Selector: UART2
-  - Requested Baudrate: 9600
+  - Requested Baudrate: 115200
   - Parity: None
   - Data Size: 8
   - Stop Bits: 1
