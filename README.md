@@ -9,7 +9,7 @@ This project comes preloaded on the PIC18F56Q24 Curiosity Nano board with four p
 - The third program sends an 8-bit counter through UART when the on-board button is pressed. This increases the counter.
 - The fourth program takes a temperature measurement using the ADC, NVM, and FVR modules
 
-The main program is changed by sending one of the numbers 1, 2, 3 or 4, through UART interface. Any other key will return the menu.
+The main program is changed by sending one of the numbers '1', '2', '3' or '4', through UART interface. Any other key will return the menu.
 
 ## Related Documentation
 
@@ -28,13 +28,13 @@ For more details and code examples on the PIC18F56Q24 click on the following lin
 
 ## Hardware Used
 
-- PIC18F56Q24 Curiosity Nano Development Board is used as a test platform.
+- PIC18F56Q24 Curiosity Nano Development Board is used as a test platform
 
-  <br><img src="images/PIC18F56Q24-CNANO_Overview.png" width="1000">
+  <br><img src="images/PIC18F56Q24_CNANO_Overview.png" width="1000">
 
 ## Operation
 
-To program the Curiosity Nano board with this MPLAB® X project, follow the steps provided in the [How to Program the Curiosity Nano Board](#how-to-program-the-curiosity-nano-board) chapter.<br>
+To program the Curiosity Nano board with this MPLAB® X project, follow the steps provided in the How to Program the Curiosity Nano Board chapter.<br>
 
 ## 1. Setup
 
@@ -74,22 +74,22 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
   <br><img src="images/Q24-UART2PLIB.png" width="400">
 
 - **ADCC**
-- Mode: Low Pass Filter
-- Positive Reference: FVR
-- Clock Source: ADCRC
+  - Mode: Low Pass Filter
+  - Positive Reference: FVR
+  - Clock Source: ADCRC
 
 <br><img src="images/Q24-ADCC.png" width="400">
 
-- Repeat Value: 10
-- Accumulator Right Shift: 4
+  - Repeat Value: 10
+  - Accumulator Right Shift: 4
 
 <br><img src="images/Q24-ADCC-COMP.png" width="400">
 
 - **FVR**
-- FVR: Enabled
-- Temp Sensor: Enabled
-- Temp Sensor Range: High
-- ADC FVR: 2X
+  - FVR: Enabled
+  - Temp Sensor: Enabled
+  - Temp Sensor Range: High
+  - ADC FVR: 2X
 
 <br><img src="images/Q24-FVRREG.png" width="400">
 
@@ -136,7 +136,7 @@ The following pin configuration must be made for this project:
 
 ### 2.1. LED Blink
 
-The first program is a simple LED blinking program. The program is activated when the microcontroller is plugged in.
+The first program is a simple LED blinking program, which is activated when the microcontroller is plugged in.
 To run the first project, send the command `1` through UART using the Data Visualizer. After sending this command, the terminal will receive the following message: `"APPLICATION blink LED"`.
 <br><img src="images/BLINKY.gif" width="800">
 
@@ -151,7 +151,7 @@ To run the second project, send the command `2` through UART using the Data Visu
 While the on-board button is pressed, the third program sends an 8-bit counter through UART and increases the counter.
 To run the third project, send the command `3` through UART using Data Visualizer. After sending this command, the terminal will receive the following message:`"APPLICATION press button to send a ramp through UART"`.
 
-Follow the steps in the **How to use MPLAB® Data Visualizer** section to set up the Data Visualizer. It will correctly display the ramp through UART2 sent by pressing the button.
+Follow the steps in the **How to use MPLAB® Data Visualizer** section to set up the Data Visualizer. The Time Plot will correctly display the ramp through UART2 sent by pressing the button.
 
 
 <br><img src="images/UART RAMP.gif" width="800">
@@ -192,7 +192,7 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 
 **Note:** The next steps must be followed to run the third program.
 
-4. Prepare MPLAB Data Visualizer. Right click on **Important files**, click **Add Item to Important Files...** .
+4. Prepare MPLAB Data Visualizer. Right click on Important files, click Add Item to Important Files....
 
 <br><img src="images/IMPORTANTFILES.png" width="500">
 
@@ -202,7 +202,7 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 
 - In the **Connections** tab, at the **COMx** option, press **New variable streamer...**
 - Type a specific **Variable Streamer Name**
-- Choose **Ones' Complement** from the **Framing Mode** dropdown menu
+- Choose Ones' Complement from the **Framing Mode** dropdown menu
 - Type a specific value from the **Start of Frame**, press **Add a variable**
 - Type a specific name for the variable name in **Variable Name**
 - Press **Next**, then press **Next** again
@@ -227,29 +227,29 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 
 This chapter shows how to use the MPLAB X IDE to program an PIC® device with an Example_Project.X. This can be applied for any other projects.
 
-- Connect the board to the PC.
+- Connect the board to the PC
 
-- Open the Example_Project.X project in MPLAB X IDE.
+- Open the Example_Project.X project in MPLAB X IDE
 
-- Set the Example_Project.X project as main project.
+- Set the Example_Project.X project as main project
 
-  - Right click on the project in the **Projects** tab and click **Set as Main Project**
+  - Right click on the project in the **Projects** tab and click Set as Main Project
     <br><img src="images/SETAS.png" width="500">
 
-- Clean and build the Example_Project.X project.
+- Clean and build the Example_Project.X project
 
-  - Right click on the **Example_Project.X** project and select **Clean and Build**
+  - Right click on the **Example_Project.X** project and select Clean and Build
     <br><img src="images/CLEANANDBUILD.png" width="500">
 
 - Select the **PICxxxxx Curiosity Nano** in the Connected Hardware Tool section of the project settings:
 
   - Right click on the project and click **Properties**
   - Click on the arrow under the Connected Hardware Tool
-  - Select the **PICxxxxx Curiosity Nano** (click on the **SN**), click **Apply** and then click **OK**:
+  - Select the PICxxxxx Curiosity Nano (click on the **SN**), click **Apply** and then click **OK**:
     <br><img src="images/PROJECTPROP.png" width="500">
 
-- Program the project to the board.
-  - Right click on the project and click **Make and Program Device**
+- Program the project to the board
+  - Right click on the project and click Make and Program Device
     <br><img src="images/MAKEPROG.png" width="500">
 
 <br>
