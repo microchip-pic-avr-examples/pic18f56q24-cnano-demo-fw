@@ -52,7 +52,7 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
   - CONFIG1 & CONFIG5:
     - Disable external oscillator, and change the reset oscillator to 64_MHz
     - WDT operating mode: WDT Disabled; SWDTEN is ignored
-  <br><img src="images/Q24-CONFIGBITS.png" width="400">
+    <br><img src="images/Q24-CONFIGBITS.png" width="400">
 
 - **UART2:**
   - UART PLIB Selector: UART2
@@ -78,12 +78,12 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
   - Positive Reference: FVR
   - Clock Source: ADCRC
 
-<br><img src="images/Q24-ADCC.png" width="400">
+  <br><img src="images/Q24-ADCC.png" width="400">
 
   - Repeat Value: 10
   - Accumulator Right Shift: 4
 
-<br><img src="images/Q24-ADCC-COMP.png" width="400">
+  <br><img src="images/Q24-ADCC-COMP.png" width="400">
 
 - **FVR**
   - FVR: Enabled
@@ -91,7 +91,7 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
   - Temp Sensor Range: High
   - ADC FVR: 2X
 
-<br><img src="images/Q24-FVRREG.png" width="400">
+  <br><img src="images/Q24-FVRREG.png" width="400">
 
 - **Pin Grid View:**
   - UART2 RX2 input: RB4
@@ -116,7 +116,7 @@ The following peripheral and clock configurations are set up using MPLAB® Code 
     - Function: GPIO
     - Direction: output
     - Custom Name: LED
-  <br><img src="images/Q24-PINMANAGER.png" width="1000">
+    <br><img src="images/Q24-PINMANAGER.png" width="1000">
 
 **Note:**
   - Pin RF3 (Button) has weak pull-up enabled
@@ -138,13 +138,15 @@ The following pin configuration must be made for this project:
 
 The first program is a simple LED blinking program, which is activated when the microcontroller is plugged in.
 To run the first project, send the command `1` through UART using the Data Visualizer. After sending this command, the terminal will receive the following message: `"APPLICATION blink LED"`.
-<br><img src="images/BLINKY.gif" width="800">
+
+  <br><img src="images/BLINKY.gif" width="800">
 
 ### 2.2. Push the button to turn on the LED
 
 The second program turns on the on-board LED by pressing the on-board button on the Curiosity Nano board.
 To run the second project, send the command `2` through UART using the Data Visualizer. After sending this command, the terminal will receive the following message: `"APPLICATION press button to turn on LED"`.
-<br><img src="images/BUTTON.gif" width="800">
+
+  <br><img src="images/BUTTON.gif" width="800">
 
 ### 2.3. Ramp on Data Visualizer
 
@@ -153,15 +155,14 @@ To run the third project, send the command `3` through UART using Data Visualize
 
 Follow the steps in the **How to use MPLAB® Data Visualizer** section to set up the Data Visualizer. The Time Plot will correctly display the ramp through UART2 sent by pressing the button.
 
-
-<br><img src="images/UART RAMP.gif" width="800">
+  <br><img src="images/UART RAMP.gif" width="800">
 
 ### 2.4 Temperature Sensor Reading
 
 The fourth program takes an internal temperature measurement when the on-board button is pressed.
 To run the fourth project, send the command `4` through UART using the Data Visualizer. After sending this command, the terminal will receive the following message: `"APPLICATION TEMP sensor"`.
 
-<br><img src="images/Q24-TEMPSENSOR.png" width="800">
+  <br><img src="images/Q24-TEMPSENSOR.png" width="800">
 
 **Note:** By pressing any other key, the program returns the menu through UART using the software terminal.
 
@@ -176,7 +177,7 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 
 1. Open the software terminal in MPLAB® X IDE. Left click the **Data Visualizer** button.
 
-<br><img src="images/DV_BUTTON.png" width="1000">
+  <br><img src="images/DV_BUTTON.png" width="1000">
 
 2. Prepare settings in Data Visualizer.
 
@@ -184,17 +185,17 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 - Set the correct **Baud Rate**
 - Select the right **Input Source**
 
-<br><img src="images/DV_SETTINGS.png" width="1000">
+  <br><img src="images/DV_SETTINGS.png" width="1000">
 
 3. Start using the programs. Press the **Start** button. Left click on **Line input**, type any key, send commands.
 
-<br><img src="images/DV_DEMO.png" width="1000">
+  <br><img src="images/DV_DEMO.png" width="1000">
 
 **Note:** The next steps must be followed to run the third program.
 
 4. Prepare MPLAB Data Visualizer. Right click on Important files, click Add Item to Important Files....
 
-<br><img src="images/IMPORTANTFILES.png" width="500">
+  <br><img src="images/IMPORTANTFILES.png" width="500">
 
 **Note:** Follow step 5 if there is no existing setup file for Data Visualizer, otherwise go to Step 6.
 
@@ -208,11 +209,11 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 - Press **Next**, then press **Next** again
 - Save these settings using **Save As** button as a DVWS file
 
-<br><img src="images/RAMP SETTINGS.png" width="1000">
+  <br><img src="images/RAMP SETTINGS.png" width="1000">
 
 6. Add the DVWS file to see the ramp using Data Visualizer. Click the **\*.DVWS file** and **Select**.
 
-<br><img src="images/EXTERNAL.png" width="700">
+  <br><img src="images/EXTERNAL.png" width="700">
 
 7. See the expected result on Data Visualizer.
 
@@ -221,7 +222,7 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 - Click **Start Streaming COMx** the communication serial port in the **Variable Streamers** tab
 - Click **Scroll axis automatically**.
 
-<br><img src="images/RAMP DEMO.png" width="1000">
+  <br><img src="images/RAMP DEMO.png" width="1000">
 
 ##  How to Program the Curiosity Nano board
 
@@ -234,23 +235,23 @@ This chapter shows how to use the MPLAB X IDE to program an PIC® device with an
 - Set the Example_Project.X project as main project
 
   - Right click on the project in the **Projects** tab and click Set as Main Project
-    <br><img src="images/SETAS.png" width="500">
+  <br><img src="images/SETAS.png" width="500">
 
 - Clean and build the Example_Project.X project
 
   - Right click on the **Example_Project.X** project and select Clean and Build
-    <br><img src="images/CLEANANDBUILD.png" width="500">
+  <br><img src="images/CLEANANDBUILD.png" width="500">
 
 - Select the **PICxxxxx Curiosity Nano** in the Connected Hardware Tool section of the project settings:
 
   - Right click on the project and click **Properties**
   - Click on the arrow under the Connected Hardware Tool
   - Select the PICxxxxx Curiosity Nano (click on the **SN**), click **Apply** and then click **OK**:
-    <br><img src="images/PROJECTPROP.png" width="500">
+  <br><img src="images/PROJECTPROP.png" width="500">
 
 - Program the project to the board
   - Right click on the project and click Make and Program Device
-    <br><img src="images/MAKEPROG.png" width="500">
+  <br><img src="images/MAKEPROG.png" width="500">
 
 <br>
 
