@@ -22,8 +22,8 @@ For more details and code examples on the PIC18F56Q24 click on the following lin
 
 - [MPLAB® X IDE  v6.15 or newer](http://www.microchip.com/mplab/mplab-x-ide)
 - [MPLAB® XC8 v2.45 or newer](http://www.microchip.com/mplab/compilers)
-- [PIC18F-Q_DFP v1.23.422 or newer Series Device Pack](https://packs.download.microchip.com/)
-- [nEDBG_TP v1.13.713](https://packs.download.microchip.com/)
+- [PIC18F-Q_DFP v1.23.425 or newer Series Device Pack](https://packs.download.microchip.com/)
+- [nEDBG_TP v1.13.715](https://packs.download.microchip.com/)
 - [MPLAB® Data Visualizer](https://www.microchip.com/en-us/tools-resources/debug/mplab-data-visualizer)
 
 ## Hardware Used
